@@ -1,0 +1,339 @@
+# Instincts generated from https://github.com/JamesWilliam1977/Z-
+# Generated: 2026-07-01T06:37:22.279Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Z--commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: docs, refactor
+
+## Evidence
+
+- 2 commits analyzed
+- Detected conventional commit pattern
+- Examples: docs: 添加 BrowserAct 白金赞助商, refactor: 教学版移除全平台用户个人信息采集与持久化
+
+---
+id: Z--commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Commit Length
+
+## Action
+
+Keep commit messages concise (~28 characters)
+
+## Evidence
+
+- Average commit message length: 28 chars
+- Based on 2 commits
+
+---
+id: Z--naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: Z--import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Z--export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Z--test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Z--test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/Z-
+---
+
+# Z  Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: z--naming-files-snake-case
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Naming Files Snake Case
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: z--naming-functions-camel-case
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Naming Functions Camel Case
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: z--naming-classes-pascal-case
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Naming Classes Pascal Case
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: z--naming-constants-screaming-snake-case
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Naming Constants Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: z--import-style-relative
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: z--export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: z--test-file-pattern-ts
+trigger: "When creating a test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Test File Pattern Ts
+
+## Action
+
+Name the file with the pattern *.test.ts
+
+## Evidence
+
+- Pattern in testing.filePattern
+
+---
+id: z--test-type-unit
+trigger: "When writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Test Type Unit
+
+## Action
+
+Write unit tests
+
+## Evidence
+
+- Pattern in testing.testTypes
+
+---
+id: z--commit-conventional-prefix
+trigger: "When making a commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Commit Conventional Prefix
+
+## Action
+
+Begin the commit message with a conventional prefix (e.g., docs:, refactor:)
+
+## Evidence
+
+- Seen in commit 'docs: 添加 BrowserAct 白金赞助商'
+- Seen in commit 'refactor: 教学版移除全平台用户个人信息采集与持久化'
+- Pattern in commits.prefixes
+
+---
+id: z--commit-message-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/Z-
+---
+
+# Z  Commit Message Length
+
+## Action
+
+Keep the commit message concise (around 28 characters on average)
+
+## Evidence
+
+- Pattern in commits.averageLength
+
